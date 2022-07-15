@@ -104,13 +104,28 @@
     border-radius: 20px;
     transform: scale(0.4);
 }
-/*------------------------ESERCIZIO X--------------------------------*/
+/*------------------------ESERCIZIO 10--------------------------------*/
 .ex-10-icon {
     font-size: 60px;
+    /* risolvo */
+    animation: ruota 3s linear infinite;
 }
+/* risolvo */
+@keyframes ruota{
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/*------------------------ESERCIZIO 11--------------------------------*/
 .ex-11-icon {
     font-size: 60px;
+    /* risolvo */
+
 }
+/* risolvo */
+
+/*------------------------ESERCIZIO X--------------------------------*/
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
