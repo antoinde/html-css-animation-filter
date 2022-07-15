@@ -108,10 +108,10 @@
 .ex-10-icon {
     font-size: 60px;
     /* risolvo */
-    animation: ruota 3s linear infinite;
+    animation: ruota_antiorario 3s linear infinite;
 }
 /* risolvo */
-@keyframes ruota{
+@keyframes ruota_antiorario{
     100% {
         transform: rotate(-360deg);
     }
@@ -124,7 +124,20 @@
 
 }
 /* risolvo */
-
+.ex-11-icon:hover{
+    animation: rotate_orario_antiorario 3s infinite;
+}
+@keyframes rotate_orario_antiorario{
+    0% {
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 /*------------------------ESERCIZIO X--------------------------------*/
 .ex-12-button, .ex-13-button {
     position: relative;
