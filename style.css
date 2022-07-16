@@ -138,7 +138,7 @@
         transform: rotate(0deg);
     }
 }
-/*------------------------ESERCIZIO 12--------------------------------*/
+/*--------------------------------------------------------------------*/
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -167,5 +167,31 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+/*------------------------ESERCIZIO 12--------------------------------*/
+/* risolvo */
+.ex-12-button:hover .ex-12-top-white {
+    animation: spostamento_top 3s infinite;
+}
+@keyframes spostamento_top{
+    0%{
+        left: 10%;
+    }
+
+    100%{
+        left: 60%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: spostamento_bottom 3s infinite;
+}
+@keyframes spostamento_bottom{
+    0%{
+        right: 20%;
+    }
+
+    100%{
+        right: 60%;
+    }
 }
 /*------------------------ESERCIZIO 13--------------------------------*/
