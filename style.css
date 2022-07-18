@@ -74,11 +74,11 @@
 /*------------------------ESERCIZIO 7--------------------------------*/
 /* risolvo */
 .ex-7-img{
-    transition: 3s;
+    transition: filter 3s;
 }
 .ex-7-img:hover{
     filter: sepia(1);
-    filter:hue-rotate(1);
+    filter: grayscale(1);
 }
 /*------------------------ESERCIZIO 8--------------------------------*/
 /* risolvo */
@@ -171,27 +171,31 @@
 /*------------------------ESERCIZIO 12--------------------------------*/
 /* risolvo */
 .ex-12-button:hover .ex-12-top-white {
-    animation: spostamento_top-12 3s infinite;
+    animation: spostamento_top-12 3s ;
 }
 @keyframes spostamento_top-12{
     0%{
         left: 10%;
     }
-
-    100%{
+    50%{
         left: 60%;
+    }
+    100%{
+        left: 10%;
     }
 }
 .ex-12-button:hover .ex-12-bottom-white {
-    animation: spostamento_bottom-12 3s infinite;
+    animation: spostamento_bottom-12 3s ;
 }
 @keyframes spostamento_bottom-12{
     0%{
         right: 20%;
     }
-
-    100%{
+    50%{
         right: 60%;
+    }
+    100%{
+        right: 20%;
     }
 }
 /*------------------------ESERCIZIO 13--------------------------------*/
